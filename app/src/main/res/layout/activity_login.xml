@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".login">
+
+    <ImageView
+        android:id="@+id/ivInicioLogo"
+        android:layout_width="200dp"
+        android:layout_height="225dp"
+        android:src="@drawable/image_inicio"
+        tools:layout_editor_absoluteY="28dp" />
+
+    <TextView
+        android:id="@+id/tvIniciarSesion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Iniciar Sesión"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        tools:layout_editor_absoluteX="232dp"
+        tools:layout_editor_absoluteY="253dp"
+        android:layout_marginVertical="20dp"
+        android:textAlignment="center"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/etLoginUsername"
+        android:layout_width="337dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="74dp"
+        tools:layout_editor_absoluteY="322dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:drawableStart="@drawable/ic_baseline_person_24"
+            android:drawablePadding="12dp"
+            android:fontFamily="@font/source_sans_pro"
+            android:hint="@string/hint_user"
+            android:inputType="text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/etLoginPassword"
+        android:layout_width="337dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="74dp"
+        tools:layout_editor_absoluteY="390dp"
+        android:layout_marginTop="10dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:drawableStart="@drawable/ic_baseline_lock_24"
+            android:drawablePadding="12dp"
+            android:fontFamily="@font/source_sans_pro"
+            android:hint="@string/hint_contrasena"
+            android:imeOptions="actionSend"
+            android:inputType="textPassword"
+            android:maxLines="1" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tvLoginOlvidarContraseña"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/source_sans_pro"
+        android:text="Olvidaste tu contaseña?"
+        android:textColor="#2A99FB"
+        android:textSize="17sp"
+        tools:layout_editor_absoluteX="290dp"
+        tools:layout_editor_absoluteY="463dp"
+        android:layout_marginVertical="20dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#305F72"
+        android:text="Ingresar"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="292dp"
+        tools:layout_editor_absoluteY="643dp"
+        android:layout_marginTop="20dp"/>
+
+</LinearLayout>
+

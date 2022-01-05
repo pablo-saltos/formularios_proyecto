@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="facci.leonardotoala.dolphin">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Dolphin">
+        <activity
+            android:name=".clases_dia_asistencia_teach"
+            android:exported="false" />
+        <activity
+            android:name=".revisar_asistencia_teach"
+            android:exported="false" />
+        <activity
+            android:name=".cursos_admin"
+            android:exported="false" />
+        <activity
+            android:name=".asistencia_curso_teach"
+            android:exported="false" />
+        <activity
+            android:name=".horario_admin"
+            android:exported="false" />
+        <activity
+            android:name=".cursos_admin_crear"
+            android:exported="false" />
+        <activity
+            android:name=".agendar_crear_clase"
+            android:exported="false" />
+        <activity
+            android:name=".agendar_editar_clase"
+            android:exported="false" />
+        <activity
+            android:name=".administrador_admin_crear"
+            android:exported="false" />
+        <activity
+            android:name=".administrador_admin_editar"
+            android:exported="false" />
+        <activity
+            android:name=".cursos_admin_editar"
+            android:exported="false" />
+        <activity
+            android:name=".estudiantes_admin_editar"
+            android:exported="false" />
+        <activity
+            android:name=".estudiantes_admin_crear"
+            android:exported="false" />
+        <activity
+            android:name=".administrador_admin"
+            android:exported="false" />
+        <activity
+            android:name=".estudiantes_admin"
+            android:exported="false" />
+        <activity
+            android:name=".profesor_admin"
+            android:exported="false" />
+        <activity
+            android:name=".profesor_admin_crear"
+            android:exported="false" />
+        <activity
+            android:name=".profesor_admin_editar"
+            android:exported="false" />
+        <activity
+            android:name=".estudiantes_asistencia_admin"
+            android:exported="false" />
+        <activity
+            android:name=".supervisar_asistencia_admin"
+            android:exported="false" />
+        <activity
+            android:name=".HomeAdmin"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".home_teach"
+            android:exported="false" />
+        <activity
+            android:name=".login"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

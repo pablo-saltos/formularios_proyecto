@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".estudiantes_asistencia_admin">>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvFechaSupervisarAsistencia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="4dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="6dp">
+
+                <ImageView
+                    android:id="@+id/iconImageViewSA"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:paddingLeft="14dp"
+                    android:paddingRight="14dp"
+                    app:srcCompat="@drawable/ic_baseline_edit_calendar_24" />
+
+                <LinearLayout
+                    android:id="@+id/LinearLayoutSA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_toEndOf="@+id/iconImageViewSA"
+                    android:layout_toRightOf="@+id/iconImageViewSA"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvmesSA"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="2dp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="OCT."
+                        android:textColor="@color/verdeoscuro"
+                        android:textSize="25dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvdiaSA"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="21"
+                        android:textSize="25dp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tcletradiaSA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="130dp"
+                    android:layout_marginRight="166dp"
+                    android:text="Lunes"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvhoraSA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="42dp"
+                    android:layout_marginEnd="52dp"
+                    android:layout_marginRight="57dp"
+                    android:text="3:00 - 5:00 pm"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        app:layout_constraintTop_toBottomOf="@+id/cvFechaSupervisarAsistencia"
+        android:id="@+id/cvestudiante1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="4dp"
+        app:cardUseCompatPadding="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="6dp">
+
+                <LinearLayout
+                    android:id="@+id/LinearLayoutestudiante1SA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="2dp"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="4dp">
+
+                    <TextView
+                        android:id="@+id/tvnombreestudiante1SA"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="Mera Garcia Wendy"
+                        android:textSize="18dp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imIcone1studiante1SA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="188dp"
+                    android:layout_marginLeft="198dp"
+                    android:layout_marginTop="3dp"
+                    android:paddingLeft="14dp"
+                    android:paddingRight="14dp"
+                    app:srcCompat="@drawable/ic_baseline_asistido_24" />
+
+                <ImageView
+                    android:id="@+id/imIcone2studiante2SA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="245dp"
+                    android:layout_marginLeft="269dp"
+                    android:layout_marginTop="3dp"
+                    android:paddingLeft="14dp"
+                    android:paddingRight="14dp"
+                    app:srcCompat="@drawable/ic_baseline_watch_later_24" />
+
+                <ImageView
+                    android:id="@+id/imIcone3studiante2SA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="303dp"
+                    android:layout_marginLeft="336dp"
+                    android:layout_marginTop="3dp"
+                    android:paddingLeft="14dp"
+                    android:paddingRight="14dp"
+                    app:srcCompat="@drawable/ic_baseline_noasistio_alt_24" />
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        app:layout_constraintTop_toBottomOf="@+id/cvestudiante1"
+        android:id="@+id/cvestudiante2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="4dp"
+        app:cardUseCompatPadding="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="6dp">
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="2dp"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="4dp">
+
+                    <TextView
+                        android:id="@+id/pepe2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="Marcillo Rivera Jose"
+                        android:textSize="18dp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imEstudiantesAsistencias2a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="188dp"
+                    android:layout_marginLeft="198dp"
+                    android:layout_marginTop="3dp"
+                    android:paddingLeft="14dp"
+                    android:paddingRight="14dp"
+                    app:srcCompat="@drawable/ic_baseline_asistido_24" />
+
+                <ImageView
+                    android:id="@+id/imEstudiantesAsistencias2ab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="245dp"
+                    android:layout_marginLeft="269dp"
+                    android:layout_marginTop="3dp"
+                    android:paddingLeft="14dp"
+                    android:paddingRight="14dp"
+                    app:srcCompat="@drawable/ic_baseline_watch_later_24" />
+
+                <ImageView
+                    android:id="@+id/imEstudiantesAsistencias3a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="303dp"
+                    android:layout_marginLeft="336dp"
+                    android:layout_marginTop="3dp"
+                    android:paddingLeft="14dp"
+                    android:paddingRight="14dp"
+                    app:srcCompat="@drawable/ic_baseline_noasistio_alt_24" />
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:fontFamily="@font/source_sans_pro"
+        android:text="Descargar Asistencia"
+        android:textColor="#2A99FB"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cvestudiante2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
